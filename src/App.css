@@ -4,6 +4,54 @@
   padding: 2rem;
   text-align: center;
 }
+h1 {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+h2 {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.nav {
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  font-size: 24px;
+  margin: 10px;
+  border: solid;
+  padding: 10px;
+  border-color: white;
+}
+li {
+  list-style-type: none;
+  display: block;
+  float: left;
+  margin: 10px;
+}
+ul {
+  margin: 150px;
+  margin-top: 250px;
+}
+.cardImage {
+  width: 200px;
+  height: 200px;
+}
+.articleCard {
+  border: 1px solid;
+  border-color: white;
+  width: 400px;
+  height: 400px;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.nav-button {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
 
 .logo {
   height: 6em;
