@@ -2,23 +2,26 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchArticles } from "./api";
 import { ArticleCard } from "./ArticleCard";
+import { Link } from "react-router-dom";
 
 export function Articles() {
   const [articles, setArticles] = useState([]);
-  const { category } = useParams();
 
   useEffect(() => {
-    fetchArticles(category).then((articles) => {
+    fetchArticles().then((articles) => {
       setArticles(articles);
     });
-  }, [category]);
+  }, [articles]);
+
   return (
     <>
       <ul className="articles">
         {articles.map((article) => {
           return (
             <li key={article.article_id}>
-              <ArticleCard item={article}></ArticleCard>
+              <Link to={`/articles/${article.article_id}`}>
+                <ArticleCard item={article}></ArticleCard>
+              </Link>
             </li>
           );
         })}
