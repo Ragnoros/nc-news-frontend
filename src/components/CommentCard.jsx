@@ -1,6 +1,4 @@
 export function CommentCard({ comment }) {
-  console.log(comment);
-
   if (comment) {
     return (
       <div className="commentCard">

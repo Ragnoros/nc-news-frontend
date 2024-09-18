@@ -38,6 +38,7 @@ ul {
   width: 200px;
   height: 200px;
 }
+
 .articleCard {
   border: 1px solid;
   border-color: white;
@@ -46,6 +47,19 @@ ul {
   margin: 0px;
   margin-bottom: 10px;
   padding: 10px;
+}
+.article-title {
+  margin-top: 50px;
+}
+
+.article-body {
+  margin-top: 50px;
+}
+.article-topic {
+  margin-top: 200px;
+}
+.article-author {
+  margin-top: 50px;
 }
 .commentCard {
   border: 1px solid;
