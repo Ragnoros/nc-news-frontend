@@ -20,3 +20,13 @@ export const fetchArticleComments = (article_id) => {
     return data;
   });
 };
+
+export const patchArticle = (article_id, inc) => {
+  return articleApi
+    .patch(`/articles/${article_id}`, {
+      inc_votes: inc,
+    })
+    .then(({ data }) => {
+      return data;
+    });
+};
