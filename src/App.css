@@ -47,6 +47,15 @@ ul {
   margin-bottom: 10px;
   padding: 10px;
 }
+.commentCard {
+  border: 1px solid;
+  border-color: white;
+  width: 500px;
+  height: 200px;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
 .nav-button {
   margin: 10px;
   padding: 10px;
