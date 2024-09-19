@@ -40,3 +40,8 @@ export const insertComment = (article_id, comment, username) => {
       return data;
     });
 };
+export const deleteComment = (comment_id) => {
+  return articleApi.delete(`/comments/${comment_id}`).then(({ data }) => {
+    return data;
+  });
+};

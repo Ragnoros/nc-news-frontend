@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { CommentCard } from "./CommentCard";
 
-export function ArticlePage() {
+export function ArticlePage({ user }) {
   const [article, setArticle] = useState([]);
   const [comments, setComments] = useState([]);
   const [votes, setVotes] = useState(0);
@@ -37,8 +37,7 @@ export function ArticlePage() {
   function handleSubmit(event) {
     event.preventDefault();
     const comment = event.target.comment.value;
-    const username = event.target.username.value;
-    insertComment(article_id, comment, username).then(({ comment }) => {
+    insertComment(article_id, comment, user).then(({ comment }) => {
       setComments([...comments, comment]);
     });
   }
@@ -61,7 +60,7 @@ export function ArticlePage() {
         {comments.map((comment) => {
           return (
             <li key={comment.comment_id}>
-              <CommentCard comment={comment} />
+              <CommentCard comment={comment} user={user} />
             </li>
           );
         })}
@@ -70,8 +69,7 @@ export function ArticlePage() {
       <form onSubmit={handleSubmit}>
         <label htmlFor="comment">Write your comment</label>
         <input name="comment" />
-        <label htmlFor="username">Username</label>
-        <input name="username"></input>
+        <label htmlFor="username">Posting as: {user}</label>
         <button>Subimt</button>
       </form>
     </>
