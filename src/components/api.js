@@ -30,3 +30,13 @@ export const patchArticle = (article_id, inc) => {
       return data;
     });
 };
+export const insertComment = (article_id, comment, username) => {
+  return articleApi
+    .post(`/articles/${article_id}/comments`, {
+      username: username,
+      body: comment,
+    })
+    .then(({ data }) => {
+      return data;
+    });
+};

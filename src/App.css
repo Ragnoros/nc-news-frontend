@@ -50,13 +50,17 @@ ul {
 }
 .article-title {
   margin-top: 50px;
+  margin-bottom: 30px;
 }
-
+.article-image {
+  margin-top: 125px;
+  margin-bottom: 10px;
+}
 .article-body {
   margin-top: 50px;
 }
 .article-topic {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 .article-author {
   margin-top: 50px;
