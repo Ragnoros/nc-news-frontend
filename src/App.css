@@ -61,6 +61,7 @@ ul {
   margin-top: 250px;
   border: 1px solid;
   width: 100%;
+  justify-content: center;
 }
 
 .cardImage {
@@ -123,12 +124,16 @@ ul {
 }
 .comments {
   margin: 150px;
-  margin-top: 150px;
+  margin-top: 50px;
   border: 1px solid;
   width: 100%;
+  justify-content: center;
+  display: block;
 }
 .comment {
   /* display: block; */
   /* float: left; */
+  width: 70%;
+  display: block;
   margin: 10px;
 }
