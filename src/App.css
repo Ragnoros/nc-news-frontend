@@ -61,18 +61,20 @@ ul {
 }
 
 .cardImage {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 .articleCard {
   border: 1px solid;
   border-color: white;
-  width: 400px;
-  height: 400px;
+  border-radius: 25px;
+  width: 200px;
+  height: 250px;
   margin: 0px;
   margin-bottom: 10px;
   padding: 10px;
+  font-size: 10px;
 }
 .articleCard:hover {
   border-style: groove;
