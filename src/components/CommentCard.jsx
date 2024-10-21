@@ -6,6 +6,7 @@ export function CommentCard({ comment, user }) {
   }
   return (
     <div className="commentCard">
+      {/* <img className="cardImage" src={comment.avatar_url} /> */}
       <h4>{comment.author}</h4>
       <p>{comment.body}</p>
       <p>{comment.created_at}</p>
