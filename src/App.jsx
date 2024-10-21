@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/articles" element={<Articles />} />
-        <Route path="/articles/:topic" element={<Articles />} />
+        {/* <Route path="/articles/:topic" element={<Articles />} /> */}
         <Route
           path="/articles/:article_id"
           element={<ArticlePage user={user} />}

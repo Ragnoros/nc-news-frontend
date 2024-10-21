@@ -56,22 +56,25 @@ export function ArticlePage({ user }) {
       <p className="article-topic">Category: {article.topic}</p>
       <p className="article-author">Posted by: {article.author}</p>
       <p className="article-body">{article.body}</p>
+      <form onSubmit={handleSubmit}>
+        <br></br>
+        <label htmlFor="comment">Write your comment</label>
+        <br></br>
+        <input name="comment" />
+        <br></br>
+        <label htmlFor="username">Posting as: {user}</label>
+        <br></br>
+        <button>Subimt</button>
+      </form>
       <ul className="comments">
         {comments.map((comment) => {
           return (
-            <li key={comment.comment_id}>
+            <li className="comment" key={comment.comment_id}>
               <CommentCard comment={comment} user={user} />
             </li>
           );
         })}
       </ul>
-
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="comment">Write your comment</label>
-        <input name="comment" />
-        <label htmlFor="username">Posting as: {user}</label>
-        <button>Subimt</button>
-      </form>
     </>
   );
 }

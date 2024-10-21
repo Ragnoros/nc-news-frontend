@@ -3,11 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #091057;
 }
 h1 {
   position: absolute;
   top: 0px;
   left: 20px;
+  color: rgb(236, 131, 5);
 }
 h2 {
   position: absolute;
@@ -49,7 +51,6 @@ h2 {
   border-color: white;
 }
 li {
-  list-style-type: none;
   display: block;
   float: left;
   margin: 10px;
@@ -58,6 +59,8 @@ li {
 ul {
   margin: 150px;
   margin-top: 250px;
+  border: 1px solid;
+  width: 100%;
 }
 
 .cardImage {
@@ -67,7 +70,7 @@ ul {
 
 .articleCard {
   border: 1px solid;
-  border-color: white;
+  border-color: rgb(236, 131, 5);
   border-radius: 25px;
   width: 200px;
   height: 250px;
@@ -75,6 +78,8 @@ ul {
   margin-bottom: 10px;
   padding: 10px;
   font-size: 10px;
+  color: #dbd3d3;
+  background-color: #024caa;
 }
 .articleCard:hover {
   border-style: groove;
@@ -99,50 +104,30 @@ ul {
 .commentCard {
   border: 1px solid;
   border-color: white;
-  width: 500px;
-  height: 250px;
+  width: 80%;
+  height: 25%;
   margin: 0px;
   margin-bottom: 10px;
   padding: 10px;
+  border-color: rgb(236, 131, 5);
+  border-radius: 25px;
+  font-size: 8px;
+  background-color: #024caa;
+  color: #dbd3d3;
 }
 .nav-button {
   margin: 10px;
   padding: 10px;
   color: white;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.comments {
+  margin: 150px;
+  margin-top: 150px;
+  border: 1px solid;
+  width: 100%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.comment {
+  /* display: block; */
+  /* float: left; */
+  margin: 10px;
 }
