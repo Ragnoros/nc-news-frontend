@@ -4,14 +4,17 @@ export function CommentCard({ comment, user }) {
   function handleClick() {
     deleteComment(comment.comment_id);
   }
+  const date = new Date(comment.created_at);
   return (
     <div className="commentCard">
-      {/* <img className="cardImage" src={comment.avatar_url} /> */}
-      <h4>{comment.author}</h4>
-      <p>{comment.body}</p>
-      <p>{comment.created_at}</p>
+      <h4 className="commentAuthor">
+        Posted By: {comment.author} on {date.toDateString()}{" "}
+      </h4>
+      <p className="commentBody">{comment.body}</p>
       {user === comment.author ? (
-        <button onClick={handleClick}>Delete Comment</button>
+        <button className="commentDelete" onClick={handleClick}>
+          Delete Comment
+        </button>
       ) : null}
     </div>
   );
