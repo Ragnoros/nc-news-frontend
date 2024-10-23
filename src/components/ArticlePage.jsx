@@ -42,6 +42,7 @@ export function ArticlePage({ user }) {
     });
   }
 
+  const date = new Date(article.created_at);
   return (
     <>
       <button value={1} onClick={handleClick}>
@@ -54,7 +55,9 @@ export function ArticlePage({ user }) {
       <h2 className="article-title">{article.title}</h2>
       <img className="article-image" src={article.article_img_url} />
       <p className="article-topic">Category: {article.topic}</p>
-      <p className="article-author">Posted by: {article.author}</p>
+      <p className="article-author">
+        Posted by: {article.author} on {date.toDateString()}
+      </p>
       <p className="article-body">{article.body}</p>
       <form onSubmit={handleSubmit}>
         <br></br>
